@@ -13,6 +13,10 @@ app.use(async function(req, res, next) {
   next();
 });
 
+app.get('/', (req, res) => {
+  res.send("SERVER IS RUNNING");
+})
+
 app.get('/api/dogs', async (req, res) => {
   try {
     let dogs = await Dog.find({})
