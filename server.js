@@ -32,12 +32,18 @@ app.get('/api/dogs', async (req, res) => {
 app.get('/api/dogs/:id/schedule', async (req, res) => {
   try {
     let foundDog = await Dog.findById(req.params.id);
-    let walks = await Walk.find({dog: foundDog.id});
-    let responseObject = {
-      dog: foundDog,
-      walks: walks
-    }
-    res.json(responseObject);
+    Walk.find({dog: foundDog.id}).populate('walkers').exec((err, populatedWalks) => {
+      if(err){
+        console.error(err)
+      } else {
+        console.log(populatedWalks);
+        let responseObject = {
+          dog: foundDog,
+          walks: populatedWalks
+        }
+        res.json(responseObject);
+      }
+    })
   } catch(e){
     res.send(e);
   }

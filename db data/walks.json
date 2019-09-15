@@ -1,0 +1,4 @@
+{"_id":{"$oid":"5d7dbde1a9248c0d4c2affd1"},"walkers":[{"$oid":"5d7da8a9fdff8019c83d981b"}],"time":{"$date":"2019-09-16T21:00:00.000Z"},"dog":{"$oid":"5d7da5d2be0a252e843acc53"},"__v":0}
+{"_id":{"$oid":"5d7dbde7876c1c2b484cc0c1"},"walkers":[{"$oid":"5d7daeac954d5a3918f39e26"}],"time":{"$date":"2019-09-16T21:00:00.000Z"},"dog":{"$oid":"5d7da54d3842c93c70fe9d67"},"__v":0}
+{"_id":{"$oid":"5d7dbdeb21e18f37d4e3163d"},"walkers":[{"$oid":"5d7daeac954d5a3918f39e26"}],"time":{"$date":"2019-09-16T21:00:00.000Z"},"dog":{"$oid":"5d7da6db946b650b0808c4d0"},"__v":0}
+{"_id":{"$oid":"5d7dbf518a74532b1c3c4a35"},"walkers":[{"$oid":"5d7da98b5c3bb536cca9743d"},{"$oid":"5d7da8a9fdff8019c83d981b"}],"time":{"$date":"2019-09-16T21:00:00.000Z"},"dog":{"$oid":"5d7da6423de48b3f08eef6b2"},"__v":1}

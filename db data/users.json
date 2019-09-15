@@ -1,0 +1,3 @@
+{"_id":{"$oid":"5d7da8a9fdff8019c83d981b"},"dogsWalked":[{"$oid":"5d7da5d2be0a252e843acc53"},{"$oid":"5d7da6423de48b3f08eef6b2"}],"name":"Vlad","age":22,"__v":1}
+{"_id":{"$oid":"5d7da98b5c3bb536cca9743d"},"dogsWalked":[{"$oid":"5d7da6423de48b3f08eef6b2"}],"name":"Hiro","age":30,"__v":3}
+{"_id":{"$oid":"5d7daeac954d5a3918f39e26"},"dogsWalked":[{"$oid":"5d7da54d3842c93c70fe9d67"},{"$oid":"5d7da6db946b650b0808c4d0"}],"name":"Shota","age":29,"__v":0}
