@@ -1,11 +1,14 @@
 const express = require("express")
 const app = express();
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const Dog = require("./models/Dog");
 const User = require("./models/User");
 const Walk = require("./models/Walk");
-mongoose.connect('mongodb://localhost:27017/go_doggy', {useNewUrlParser: true});
+mongoose.connect(process.env.DB_CONNECT, {useNewUrlParser:true});
 
 app.use(async function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
@@ -50,5 +53,4 @@ app.get('/api/users/:id/dogs', async (req, res) => {
   });
 })
 
-const port = 5000
-app.listen(port, () => console.log(`Server started on port ${port}`))
+app.listen(process.env.PORT, process.env.IP, () => console.log(`Server started on port ${process.env.PORT}`))
